@@ -4,7 +4,11 @@ import Clock from './clock';
 export default class App extends React.Component{
 	render(){
 		return (
+			<div>
 			<Clock></Clock>
+			<Clock></Clock>
+			<Clock></Clock>
+			</div>
 		);
 	}
 }

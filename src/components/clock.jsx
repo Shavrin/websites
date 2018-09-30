@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Clock extends Component {
+export default class Clock extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {date: new Date()};
@@ -12,7 +12,7 @@ export default class Clock extends Component {
 			1000
 		);
 	}
-	componentWillMount(){
+	componentWillUnmount(){
 		clearInterval(this.timerID);
 	}
 	tick(){
@@ -23,7 +23,6 @@ export default class Clock extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Clocky Clock!</h1>
 				<h2>It is {this.state.date.toLocaleTimeString()}.</h2>
 			</div>
 		)

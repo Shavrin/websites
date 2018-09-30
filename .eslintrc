@@ -6,7 +6,7 @@
     "settings": {
         "react": {
             "pragma": "React",
-            "version": "15.6.1"
+            "version": "16.5.2"
         }
     },
     "plugins": [
