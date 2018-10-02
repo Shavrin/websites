@@ -9,4 +9,4 @@ storiesOf('Clock', module)
 
 storiesOf('Button', module)
   .add('Plain Button', () => <Button />)
-  .add('Button with text', () => <Button name="Button with text" />);
+  .add('Button with text', () => <Button name="Search now!" />);
