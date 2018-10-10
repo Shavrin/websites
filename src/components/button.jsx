@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import styles from '../styles/button.css';
+import PropTypes from 'prop-types';
+import '../styles/button.css';
+import '../styles/styles.css';
 
 class Button extends Component {
   constructor(props) {
@@ -10,8 +12,20 @@ class Button extends Component {
   render() {
     const { name, transparent } = this.props;
 
-    return <div className="button">{name}</div>;
+    return transparent ? (
+      <div className="button transparent">{name}</div>
+    ) : (
+      <div className="button">{name}</div>
+    );
   }
 }
 
+Button.propTypes = {
+  name: PropTypes.string.isRequired,
+  transparent: PropTypes.bool,
+};
+
+Button.defaultProps = {
+  transparent: false,
+};
 export default Button;

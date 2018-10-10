@@ -1,20 +1,30 @@
 .button {
-  display: inline-block;
-  padding: 10px;
+  display: block;
+  padding: 0.7rem 1rem;
+  line-height: 1;
   text-align: center;
   background-color: #2199e8;
-  color: white;
-  transition: background 0.3s ease-in-out;
-  min-width: 50px;
-  min-height: 10px;
+  color: #fff;
+  transition: background 0.25s ease-out;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0 1rem 1rem 0;
+}
+
+.button:hover {
+  background: #1583cc;
 }
 
 .button.transparent {
   background-color: transparent;
   color: #2199e8;
+  transition: background 0s, color 0.25s ease-out;
+  font-size: 1rem;
 }
 
-.button:hover {
-  background: #1583cc;
-  cursor: pointer;
+.button.transparent:hover {
+  background-color: transparent;
+  color: #1583cc;
 }

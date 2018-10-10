@@ -1,10 +1,6 @@
 import React from 'react';
-import Title from './title';
+import Navbar from './navbar';
 
-const App = () => (
-  <div>
-    <Title name="Interplanetary" />
-  </div>
-);
+const App = () => <Navbar />;
 
 export default App;
