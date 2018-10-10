@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color: #2199e8;
+  color: white;
+  transition: background 0.3s ease-in-out;
+  min-width: 50px;
+  min-height: 10px;
+}
+
+.button.transparent {
+  background-color: transparent;
+  color: #2199e8;
+}
+
+.button:hover {
+  background: #1583cc;
+  cursor: pointer;
+}

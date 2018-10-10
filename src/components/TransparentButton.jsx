@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import styles from '../styles/styles.css';
 
-class Button extends Component {
+class TransparentButton extends Component {
   constructor(props) {
     super(props);
     this.setState({ clicked: true });
   }
 
   render() {
-    const { name, transparent } = this.props;
+    const { name } = this.props;
 
-    return <div className="button">{name}</div>;
+    return <div className="button transparent">{name}</div>;
   }
 }
 
-export default Button;
+export default TransparentButton;

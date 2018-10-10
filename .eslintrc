@@ -3,7 +3,8 @@
   "parser": "babel-eslint",
   "plugins": ["react", "jsx-a11y", "import"],
   "rules": {
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "env": {
     "browser": true,
